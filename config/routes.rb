@@ -7,7 +7,7 @@ Rails.application.routes.draw do
       resources :prescriptions
       resources :admin_users
 
-      root to: 'admin#index'
+      root to: 'admin_users#index'
     end
   
 
@@ -39,14 +39,14 @@ Rails.application.routes.draw do
   end
 
   authenticated :admin_user do
-    root 'admin_users#index', as: :authenticated_admin_user_root
+    root 'admin/admin_users#index', as: :authenticated_admin_user_root
   end
 
   resources :users
   resources :doctors
   resources :appointments
   resources :prescriptions
-  resources :admin_users, controller: 'admin/admin', module: 'admin'
+  # resources :admin_users
 
 
   match '/404', to: 'errors#not_found', via: :all
