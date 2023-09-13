@@ -85,4 +85,4 @@ production:
   database: clinicapp_production
   username: clinicapp
   password: <%= ENV["CLINICAPP_DATABASE_PASSWORD"] %>
-  url: <%= ENV["MY_APP_DATABASE_URL"] %>
+  url: <%= ENV["DATABASE_URL"] %>
