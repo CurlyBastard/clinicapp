@@ -38,9 +38,9 @@ Rails.application.routes.draw do
     root 'doctors#index', as: :authenticated_doctor_root
   end
 
-  authenticated :admin_user do
-    root 'admin/admin_users#index', as: :authenticated_admin_user_root
-  end
+  # authenticated :admin_user do
+  #   root 'admin/admin_users#index', as: :authenticated_admin_user_root
+  # end
 
   resources :users
   resources :doctors
