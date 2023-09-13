@@ -8,6 +8,8 @@
     "sass": "^1.62.0"
   },
   "scripts": {
-    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
+    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules",
+    "start": "node server.js",
+    "build": "yarn build"
   }
 }
