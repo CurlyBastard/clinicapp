@@ -9,7 +9,11 @@ class DoctorDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     id: Field::Number,
+    full_name: Field::String,
+    password: Field::String,
+    phone: Field::String,
     email: Field::String,
+    category: Field::BelongsTo,
     encrypted_password: Field::String,
     remember_created_at: Field::DateTime,
     reset_password_sent_at: Field::DateTime,
@@ -34,7 +38,11 @@ class DoctorDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
     id
+    full_name
     email
+    password
+    category
+    phone
     encrypted_password
     remember_created_at
     reset_password_sent_at
@@ -47,8 +55,11 @@ class DoctorDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
+    full_name
+    password
+    phone
     email
-    encrypted_password
+    category
     remember_created_at
     reset_password_sent_at
     reset_password_token

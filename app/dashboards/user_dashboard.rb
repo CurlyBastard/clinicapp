@@ -11,6 +11,9 @@ class UserDashboard < Administrate::BaseDashboard
     id: Field::Number,
     appointments: Field::HasMany,
     doctors: Field::HasMany,
+    full_name: Field::String,
+    password: Field::String,
+    phone: Field::String,
     email: Field::String,
     encrypted_password: Field::String,
     remember_created_at: Field::DateTime,
@@ -51,8 +54,9 @@ class UserDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
-    appointments
-    doctors
+    full_name
+    password
+    phone
     email
     encrypted_password
     remember_created_at

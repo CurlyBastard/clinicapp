@@ -19,7 +19,7 @@ module Admin
         #     @admin_user = AdminUser.new(admin_user_params)
         
         #     if @admin_user.save
-        #       redirect_to admin_admin_user_path(@admin_user), notice: 'Admin user was successfully created.'
+        #       redirect_to root_path(@admin_user), notice: 'Admin user was successfully created.'
         #     else
         #       render :new
         #     end
