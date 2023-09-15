@@ -8,12 +8,12 @@ Admin
     password: qwerty
 
 User
-    email: sample1@gmail.com
-    phone: 123456789
+    email: moon@star.com
+    phone: 1234554321
     password: qwerty
 
 Doctor
-    email: doc1@gmail.com
-    phone: 1234567890
+    email: dagoth@ur.com
+    phone: 1234512345
     password: qwerty
 
