@@ -4,7 +4,7 @@
       <h1 class="display-3">Doctor's profile</h1>
       <h2>Dear doctor <%= current_doctor.full_name %>!</h2>
       <h3 class="text-primary"> <%= current_doctor.category&.name %> </h3>
-      <p class="lead">Work please with opened appointments</p>
+      <p class="lead">Please, work with opened appointments</p>
       <p>
         <%= link_to('Back', root_path, class: 'btn btn-secondary my-2') %>
         <%= link_to('Prescriptions', prescriptions_path, class: 'btn btn-primary') %>

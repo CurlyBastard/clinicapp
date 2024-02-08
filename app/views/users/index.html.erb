@@ -1,14 +1,14 @@
 <h1 class="display-3 text-center main-title mt-4">Patients public page</h1>
 
-<%= render "shared/logout_file" %>
-
-<div class="row featurette card-body mt-4">
-  <div class="col-md-7">
-    <h2 class="featurette-heading">Hello dear <%= current_user.full_name %></h2>
-    <p class="lead">Under this sun and sky, outlander, we greet you warmly. </p>
-    <div class="custom-btn-image">
-      <%= link_to "Enter your profile", user_path(@user), class: "btn btn-success btn-lg text-white" %>
+<div class="row featurette card-body mt-5">
+  <div class="display-4 text-center main-title mt-4">
+    <div class="col-md-0">
+      <h2 class="featurette-heading">Hello, <%= current_user.full_name %></h2>
+      <p class="lead">Under this sun and sky, outlander, we greet you warmly. </p>
+      <div class="custom-btn-image">
+        <%= link_to "Enter your profile", user_path(@user), class: "btn btn-success btn-lg text-white" %>
+      </div>
     </div>
+    <%= render "shared/logout_file" %>
   </div>
-  
 </div>

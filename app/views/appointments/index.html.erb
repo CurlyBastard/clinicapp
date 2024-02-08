@@ -4,17 +4,17 @@
 
 <div class="row featurette card-body">
   <div class="col-md-12">
-    <h2 class="display-5 font-italic">Hello dear <%= current_user.full_name %></span></h2>
+    <h2 class="display-5 font-italic">Hello, <%= current_user.full_name %></span></h2>
     <% if @appointments.blank? %>
-      <p>You don't have any appointment</p>
+      <p>You don't have any appointment, muthsera.</p>
     <% else %>
       <% @appointments.each do |appointment| %>
         <table class="table">
           <thead>
           <tr>
             <th class="table-success">Descriptions</th>
-            <th class="table-danger">Your date</th>
-            <th class="table-warning">Name your doctor</th>
+            <th class="table-danger">Your appointment date</th>
+            <th class="table-warning">Your doctor</th>
             <th class="table-success">Email your doctor</th>
             <th class="table-warning">Phone your doctor</th>
             <th class="table-danger">Cancel appointments</th>
